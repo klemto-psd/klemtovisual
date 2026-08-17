@@ -84,3 +84,36 @@ function moveHomeCompare(dir){ homeCompareIndex=(homeCompareIndex+dir+homeCompar
 document.querySelector('.home-compare-arrow.prev')?.addEventListener('click',()=>moveHomeCompare(-1));
 document.querySelector('.home-compare-arrow.next')?.addEventListener('click',()=>moveHomeCompare(1));
 renderHomeCompare();
+
+// Clients — section « Ils m’ont fait confiance »
+// Pour ajouter/supprimer/réordonner quelqu’un, modifie uniquement cette liste.
+const trustPeople = [
+  { name: 'YORSSY', image: 'YORSSY(2).jpg' },
+  { name: 'ADIDAS', image: 'ADIDAS(2).jpg' },
+  { name: 'ANYME', image: 'ANYME(3).jpg' },
+  { name: 'BOOSKA-P', image: 'BOOSKA P(2).jpg' },
+  { name: 'CITADIUM', image: 'CITADIUM(2).jpg' },
+  { name: 'DJIBRIL94260', image: 'DJIBRIL94260(2).jpg' },
+  { name: 'ESPERENÇA', image: 'esperenca.jpg' },
+  { name: 'LA MANO', image: 'LAMANO(2).jpg' },
+  { name: 'LA PATTE', image: 'LAPATTE(2).jpg' },
+  { name: 'MATTEO SINET', image: 'MATTEO SINET(2).jpg' },
+  { name: 'MOUGLI', image: 'MOUGLI(2).jpg' },
+  { name: 'POLSKA', image: 'POLSKA(2).jpg' },
+  { name: 'PSG', image: 'PSG(2).jpg' },
+  { name: 'SADEK', image: 'SADEK(2).jpg' },
+  { name: 'THÉO RITZY', image: 'THEO RITZY(2).jpg' },
+  { name: 'YOMI DENZEL', image: 'YOMI DENZEL(2).jpg' }
+];
+
+const trustTrack = document.querySelector('#trustTrack');
+if (trustTrack) {
+  const renderTrustPerson = person => `
+    <div class="trust-person">
+      <div class="trust-avatar"><img src="assets/trust/${person.image}" alt="${person.name}" loading="lazy"></div>
+      <span>${person.name}</span>
+    </div>`;
+
+  // On double automatiquement la liste pour conserver le défilement infini.
+  trustTrack.innerHTML = [...trustPeople, ...trustPeople].map(renderTrustPerson).join('');
+}
