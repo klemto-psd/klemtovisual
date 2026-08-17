@@ -100,7 +100,7 @@ const trustPeople = [
   { name: 'MATTEO SINET', image: 'MATTEO SINET(2).jpg' },
   { name: 'MOUGLI', image: 'MOUGLI(2).jpg' },
   { name: 'POLSKA', image: 'POLSKA(2).jpg' },
-  { name: 'PSG', image: 'PSG.jpg' },
+  { name: 'PSG', image: 'PSG-NEW.jpg' },
   { name: 'SADEK', image: 'SADEK(2).jpg' },
   { name: 'THÉO RITZY', image: 'THEO RITZY(2).jpg' },
   { name: 'YOMI DENZEL', image: 'YOMI DENZEL(2).jpg' }
