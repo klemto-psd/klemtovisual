@@ -69,7 +69,6 @@ const portfolioItems = [
   { image: "minia-new-29.jpg", category: "miniature" },
   { image: "minia-new-30.jpg", category: "miniature" },
   { image: "minia-new-31.jpg", category: "miniature" },
-  { image: "minia-new-32.jpg", category: "miniature" },
   { image: "minia-new-33.jpg", category: "miniature" },
   { image: "minia-new-34.jpg", category: "miniature" },
 
