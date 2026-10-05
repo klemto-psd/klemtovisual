@@ -117,3 +117,10 @@ if (trustTrack) {
   // On double automatiquement la liste pour conserver le défilement infini.
   trustTrack.innerHTML = [...trustPeople, ...trustPeople].map(renderTrustPerson).join('');
 }
+
+
+// Confirmation après envoi du formulaire de contact
+if (new URLSearchParams(window.location.search).get('sent') === '1') {
+  document.getElementById('contactSuccess')?.classList.add('show');
+  history.replaceState({}, '', window.location.pathname + '#contact');
+}

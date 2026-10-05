@@ -38,6 +38,8 @@ const portfolioItems = [
   { image: "thumb-18.jpg", category: "miniature" },
   { image: "thumb-19.jpg", category: "miniature" },
   { image: "thumb-20.jpg", category: "miniature" },
+
+  // 34 NOUVELLES MINIATURES — 05/09/2026
   { image: "minia-new-01.jpg", category: "miniature" },
   { image: "minia-new-02.jpg", category: "miniature" },
   { image: "minia-new-03.jpg", category: "miniature" },
@@ -69,6 +71,7 @@ const portfolioItems = [
   { image: "minia-new-29.jpg", category: "miniature" },
   { image: "minia-new-30.jpg", category: "miniature" },
   { image: "minia-new-31.jpg", category: "miniature" },
+  { image: "minia-new-32.jpg", category: "miniature" },
   { image: "minia-new-33.jpg", category: "miniature" },
   { image: "minia-new-34.jpg", category: "miniature" },
 
